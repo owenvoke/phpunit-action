@@ -12,8 +12,8 @@ LABEL com.github.actions.color="blue"
 COPY LICENSE.md README.md /
 
 RUN php -r "copy('https://phar.phpunit.de/phpunit.phar', 'phpunit.phar');"
+RUN chmod +x phpunit.phar
 RUN mv phpunit.phar /usr/local/bin/phpunit
 
 COPY entrypoint.sh /entrypoint.sh
 ENTRYPOINT ["/entrypoint.sh"]
-CMD ["help"]
