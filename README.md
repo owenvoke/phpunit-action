@@ -11,7 +11,7 @@ Via GitHub Workflow
 
 ```hcl
 action "PHPUnit Test" {
-  uses = "pxgamer/phpunit@master"
+  uses = "pxgamer/phpunit-action@master"
 }
 ```
 
