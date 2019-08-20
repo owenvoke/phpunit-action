@@ -17,7 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
-      # For YAML Actions, use v2 or later
+      # For YAML Actions, use v1 or later
       - uses: pxgamer/phpunit-action@master
         with:
           # If there isn't a PHPUnit config, specify files or directories to test
