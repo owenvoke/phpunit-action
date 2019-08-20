@@ -9,10 +9,19 @@ This Action for [PHPUnit][link-phpunit] enables arbitrary actions with the PHPUn
 
 Via GitHub Workflow
 
-```hcl
-action "PHPUnit Test" {
-  uses = "pxgamer/phpunit-action@master"
-}
+```yml
+on: push
+name: CI
+jobs:
+  phpunit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      # For YAML Actions, use v1 or later
+      - uses: pxgamer/phpunit-action@master
+        with:
+          # If there isn't a PHPUnit config, specify files or directories to test
+          command: tests/
 ```
 
 ## Change log

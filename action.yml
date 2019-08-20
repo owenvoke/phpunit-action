@@ -1,0 +1,15 @@
+name: 'GitHub Action for PHPUnit'
+description: 'Wraps the PHPUnit CLI to enable common PHPUnit commands.'
+author: 'Owen Voke <@pxgamer>'
+inputs:
+    command:
+        description: 'User defined command'
+        required: false
+branding:
+    color: 'blue'
+    icon: 'check-circle'
+runs:
+    using: 'docker'
+    image: 'Dockerfile'
+    args:
+    - ${{ inputs.command }}
