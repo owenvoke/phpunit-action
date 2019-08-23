@@ -1,4 +1,4 @@
-# phpunit-action
+# GitHub Action for PHPUnit
 
 [![Latest Version on GitHub][ico-version]][link-github]
 [![Software License][ico-license]](LICENSE.md)
