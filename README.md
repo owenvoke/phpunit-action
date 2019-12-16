@@ -7,6 +7,8 @@ This Action for [PHPUnit][link-phpunit] enables arbitrary actions with the PHPUn
 
 ## Usage
 
+> This action is no longer recommended. Use the [PHPUnit][link-phpunit] package directly in your project via Composer.
+
 Via GitHub Workflow
 
 ```yml
